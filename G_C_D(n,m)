@@ -1,0 +1,13 @@
+def G_C_D(n,m):
+    while m != 0:
+        n,m = m,n%m
+    return n
+
+
+def main():
+    a,b = eval(input("please enter two integers greater than 0"))
+    gcd = G_C_D(a,b)
+    print(f"the GCD of {a} and {b} is {gcd}!!")
+
+if _name_== "_main_":
+    main()
